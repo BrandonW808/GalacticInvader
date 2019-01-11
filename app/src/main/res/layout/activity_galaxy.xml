@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:background="#000000"
+    tools:context=".GalaxyActivity">
+
+    <Button
+        android:id="@+id/fireBtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Fire"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/boostBtn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pauseBtn" />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pause"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fireBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boostBtn4"
+        style="@android:style/Widget.Button"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Boost"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/shieldBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fireBtn" />
+
+    <Button
+        android:id="@+id/shieldBtn3"
+        style="@android:style/Widget.Button"
+        android:layout_width="70dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Shield"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boostBtn4" />
+
+</android.support.constraint.ConstraintLayout>
